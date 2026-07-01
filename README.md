@@ -49,6 +49,14 @@ The dataset used is the **Titanic Dataset** (`tested.csv`), which contains infor
 4. The Cabin column had the highest number of missing values.
 5. Fare and Survival had a positive correlation (0.19), while Pclass and Fare were negatively correlated (-0.58) — meaning passengers who paid higher fares (mostly 1st class) had better chances of survival.
 
+## ⚠️ Important Note on Dataset
+Upon deeper analysis, this dataset (`tested.csv`) was found to follow a gender-based 
+survival pattern (all female passengers marked as survived, all male passengers marked 
+as not survived), rather than representing real mixed historical outcomes. This explains 
+the strong correlation between gender and survival in this analysis. The other patterns 
+(class, fare) are influenced by this underlying gender split.
+
+
 ## ✅ Conclusion
 This EDA reveals that **gender, passenger class, and fare** were the strongest indicators of survival on the Titanic, while age alone did not show a significant impact. This highlights how socio-economic factors influenced survival outcomes during the disaster.
 
